@@ -1,6 +1,6 @@
 # Buy-Side Opportunities
 
-A curated list of **100 small and mid-sized buy-side firms** across private credit, BDCs, hedge funds, litigation finance and insurance-linked securities, with what is known about how each one hires.
+A curated list of **101 small and mid-sized buy-side firms** across private credit, BDCs, hedge funds, litigation finance and insurance-linked securities, with what is known about how each one hires.
 **22** firms had a specific role posted when the list was compiled.
 
 Most of these firms are too small for campus recruiting, so a direct note to the contact listed often goes further than a portal.
@@ -9,13 +9,13 @@ Most of these firms are too small for campus recruiting, so a direct note to the
 
 ---
 
-### Browse 100 Firms by Category
+### Browse 101 Firms by Category
 
-💳 **[Private Credit & Asset-Based Finance](#-private-credit--asset-based-finance)** (34 firms, 7 with open roles)
+💳 **[Private Credit & Asset-Based Finance](#-private-credit--asset-based-finance)** (34 firms, 6 with open roles)
 
 🏦 **[BDCs & Venture Debt](#-bdcs--venture-debt)** (11 firms, 6 with open roles)
 
-📈 **[Hedge Funds](#-hedge-funds)** (36 firms, 7 with open roles)
+📈 **[Hedge Funds](#-hedge-funds)** (37 firms, 8 with open roles)
 
 ⚖️ **[Litigation Finance & Insurance-Linked Securities](#️-litigation-finance--insurance-linked-securities)** (14 firms, 2 with open roles)
 
@@ -37,7 +37,6 @@ Most of these firms are too small for campus recruiting, so a direct note to the
 
 | Firm | Strategy | HQ | AUM | Opportunity / contact | Link |
 |---|---|---|---|---|---|
-| 🟢 **Crayhill Capital Management** | Asset-based private credit | New York | >$2B regulatory AUM | Analyst/Associate | <a href="https://talents.vaia.com/?p=26602390"><img src="https://img.shields.io/badge/Apply-2ea44f?style=flat" alt="Apply"></a> |
 | 🟢 **Eclipse Business Capital** | Independent asset-based lending | Chicago | Undisclosed | Sr. Credit Analyst (GARP) | <a href="https://jobs.garp.org/job/sr-credit-analyst/81177689"><img src="https://img.shields.io/badge/Apply-2ea44f?style=flat" alt="Apply"></a> |
 | 🟢 **Penn Capital Management** | Credit & equity (Seaport affiliate) | Philadelphia | $1.94B | Research Analyst (Lever) | <a href="https://jobs.lever.co/seaportglobal/39716c64-5f59-4d72-90f6-e117d9dd575a"><img src="https://img.shields.io/badge/Apply-2ea44f?style=flat" alt="Apply"></a> |
 | 🟢 **Pier Asset Management** | Specialty finance credit | Manhattan Beach, CA | Undisclosed (exempt reporting adviser) | BD Associate | <a href="https://www.mediabistro.com/jobs/3062371656-business-development-associate"><img src="https://img.shields.io/badge/Apply-2ea44f?style=flat" alt="Apply"></a> |
@@ -52,6 +51,7 @@ Most of these firms are too small for campus recruiting, so a direct note to the
 | **Brightwood Capital Advisors** | Middle-market private credit | New York | >$4B | - | - |
 | **Callodine Commercial Finance / Credit Mgmt** | ABL (Callodine Group) | Boston | Group ~$20B | Tel 617-880-7480 | <a href="https://www.callodine.com/businesses/callodine-credit-management/"><img src="https://img.shields.io/badge/Website-6e7781?style=flat" alt="Website"></a> |
 | **Concise Capital Management** | Short-duration high yield | Miami | $839M | Tel 305-371-4578 | - |
+| **Crayhill Capital Management** | Asset-based private credit | New York | >$2B regulatory AUM | recruiting@crayhill.com | <a href="mailto:recruiting@crayhill.com"><img src="https://img.shields.io/badge/Email-6e7781?style=flat" alt="Email"></a> |
 | **D2 Asset Management** | Specialty finance / structured credit | Dallas | $1.8B | d2-am.com · 214-831-5640 | <a href="https://www.d2-am.com"><img src="https://img.shields.io/badge/Website-6e7781?style=flat" alt="Website"></a> |
 | **Gibraltar Business Capital** | ABL (Hercules Capital subsidiary) | Northbrook, IL | Undisclosed | - | - |
 | **Great Rock Capital** | Asset-focused senior secured lending | Westport, CT | Fund II: $600M equity | - | - |
@@ -103,6 +103,7 @@ Most of these firms are too small for campus recruiting, so a direct note to the
 | 🟢 **Frontaura Capital** | Frontier & small EM equity | Not listed | Undisclosed | Equity Research Analyst (Handshake) | <a href="https://app.joinhandshake.com/jobs/10356873/share_preview"><img src="https://img.shields.io/badge/Apply-2ea44f?style=flat" alt="Apply"></a> |
 | 🟢 **Moreton Capital Partners** | Systematic commodities | Remote | Undisclosed | Open role on Indeed (search firm name) | - |
 | 🟢 **Stevens Capital Management** | Fund of hedge funds | Radnor, PA | $3B+ operation | Open role on ZipRecruiter (search firm name) | - |
+| 🟢 **Xantium** | Multi-strategy quant (Tudor spinout) | New York / London | ~$9B planned at launch (H1 2027) | Exploratory application (Greenhouse) | <a href="https://job-boards.greenhouse.io/xantium/jobs/4178187009"><img src="https://img.shields.io/badge/Apply-2ea44f?style=flat" alt="Apply"></a> |
 | **Ancora Alternatives** | Activist | Cleveland | $1.29B | Careers page | <a href="https://www.ancora.net/careers"><img src="https://img.shields.io/badge/Careers-0969da?style=flat" alt="Careers"></a> |
 | **Engineers Gate** | Systematic quant | New York | Undisclosed (large) | Greenhouse job board | <a href="https://job-boards.greenhouse.io/engineersgate"><img src="https://img.shields.io/badge/Careers-0969da?style=flat" alt="Careers"></a> |
 | **Kepos Capital** | Systematic macro | New York | Undisclosed | Careers page on keposcapital.com | - |
