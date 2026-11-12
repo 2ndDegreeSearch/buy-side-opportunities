@@ -1,0 +1,32 @@
+name: Check README
+
+# README.md is generated from firms.csv and committed alongside it.
+# This fails when the committed README.md does not match the generator's output.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render README
+        run: python3 .github/scripts/build_board.py
+
+      - name: Compare with committed README
+        run: |
+          if ! git diff --exit-code README.md; then
+            echo "::error file=README.md::README.md is out of date. Run 'python3 .github/scripts/build_board.py' and commit the result."
+            exit 1
+          fi

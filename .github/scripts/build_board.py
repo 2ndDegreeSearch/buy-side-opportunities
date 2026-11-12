@@ -7,7 +7,8 @@ a category index with counts, a legend, then one table per category.
 Usage:
     python3 .github/scripts/build_board.py [--input firms.csv] [--output README.md]
 
-The update-readme workflow runs this on every push that changes firms.csv.
+Commit the regenerated README.md together with firms.csv. The check-readme workflow fails
+when README.md does not match what this script produces from firms.csv.
 """
 
 from __future__ import annotations
@@ -16,7 +17,6 @@ import argparse
 import csv
 import re
 from dataclasses import dataclass
-from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]  # repo root, two levels above .github/scripts
@@ -138,7 +138,7 @@ def sort_key(firm: Firm) -> tuple:
     return (rank, firm.name.lower())
 
 
-def render(firms: list[Firm], today: date) -> str:
+def render(firms: list[Firm]) -> str:
     by_section = {s: sorted((f for f in firms if f.section == s), key=sort_key) for s in CATEGORIES}
     n_posting = sum(f.status == "posting" for f in firms)
 
@@ -197,9 +197,9 @@ def render(firms: list[Firm], today: date) -> str:
         "",
         "This README is generated from [`firms.csv`](./firms.csv) by "
         "[`.github/scripts/build_board.py`](./.github/scripts/build_board.py). "
-        "Do not edit it by hand: change `firms.csv` and a GitHub Action regenerates it.",
+        "Do not edit it by hand: change `firms.csv`, run `python3 .github/scripts/build_board.py`, and commit both files.",
         "",
-        f"<sub>Last generated {today.isoformat()}. AUM figures come from Form ADV, 13F filings and press reports.</sub>",
+        "<sub>AUM figures come from Form ADV, 13F filings and press reports.</sub>",
         "",
     ]
     return "\n".join(out)
@@ -211,7 +211,7 @@ def main() -> None:
     parser.add_argument("--output", default=ROOT / "README.md", type=Path)
     args = parser.parse_args()
     firms = read_firms(args.input)
-    args.output.write_text(render(firms, date.today()), encoding="utf-8")
+    args.output.write_text(render(firms), encoding="utf-8")
     print(f"Wrote {args.output} ({len(firms)} firms)")
 
 

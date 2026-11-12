@@ -10,12 +10,13 @@ A maintainer will update the data for you.
 ## Editing the data directly
 
 The board is generated from [`firms.csv`](./firms.csv).
-Do not edit `README.md` by hand, because it is overwritten on every update.
+Do not edit `README.md` by hand. It is regenerated from `firms.csv`.
 
 1. Fork the repo and edit `firms.csv`.
-2. Optionally preview the result with `python3 .github/scripts/build_board.py` (Python 3.10+, no dependencies).
-3. Open a pull request.
-   A GitHub Action checks that the CSV renders, and regenerates `README.md` once the pull request is merged.
+2. Regenerate the board with `python3 .github/scripts/build_board.py` (Python 3.10+, no dependencies).
+3. Commit both `firms.csv` and `README.md`, and open a pull request.
+   A GitHub Action fails the pull request if `README.md` does not match `firms.csv`.
+   A maintainer reviews and merges it.
 
 ### Columns
 
