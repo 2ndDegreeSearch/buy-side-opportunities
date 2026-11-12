@@ -114,8 +114,11 @@ def cell(text: str) -> str:
 
 
 def anchor(heading: str) -> str:
-    """GitHub heading anchor: lowercase, drop punctuation and emoji, spaces to dashes."""
-    return re.sub(r"[^\w\- ]", "", heading.lower()).replace(" ", "-")
+    """GitHub heading anchor: lowercase, drop punctuation and emoji, spaces to dashes.
+
+    GitHub keeps the invisible emoji variation selector U+FE0F (as in "⚖️"), so it is kept here too.
+    """
+    return re.sub(r"[^\w\- ️]", "", heading.lower()).replace(" ", "-")
 
 
 def render_row(firm: Firm) -> str:

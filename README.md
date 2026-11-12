@@ -17,7 +17,7 @@ Most of these firms are too small for campus recruiting, so a direct note to the
 
 📈 **[Hedge Funds](#-hedge-funds)** (36 firms, 7 with open roles)
 
-⚖️ **[Litigation Finance & Insurance-Linked Securities](#-litigation-finance--insurance-linked-securities)** (14 firms, 2 with open roles)
+⚖️ **[Litigation Finance & Insurance-Linked Securities](#️-litigation-finance--insurance-linked-securities)** (14 firms, 2 with open roles)
 
 🌱 **[Emerging Managers](#-emerging-managers)** (5 firms, 0 with open roles)
 
