@@ -30,9 +30,14 @@ body:
     id: posting
     attributes:
       label: Is a specific role open now?
+      description: N/A means this update is not about a role, and is treated the same as No.
       options:
+        - "N/A"
         - "No"
         - "Yes"
+      default: 0
+    validations:
+      required: true
   - type: input
     id: careers
     attributes:
