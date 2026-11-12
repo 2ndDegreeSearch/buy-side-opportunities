@@ -7,7 +7,7 @@ body:
     id: firm
     attributes:
       label: Firm name
-      placeholder: Varadero Capital
+      placeholder: "e.g. Varadero Capital"
     validations:
       required: true
   - type: dropdown
@@ -26,14 +26,14 @@ body:
     id: strategy
     attributes:
       label: Strategy
-      placeholder: ABF / structured credit
+      placeholder: "e.g. ABF / structured credit"
     validations:
       required: true
   - type: input
     id: hq
     attributes:
       label: Headquarters
-      placeholder: New York
+      placeholder: "e.g. New York"
     validations:
       required: true
   - type: input
@@ -41,14 +41,14 @@ body:
     attributes:
       label: AUM and source
       description: Include where the figure comes from (Form ADV, 13F, press release, ...).
-      placeholder: $2.3B (Form ADV, 2026)
+      placeholder: "e.g. $2.3B (Form ADV, 2026)"
   - type: dropdown
     id: posting
     attributes:
       label: Is a specific role open?
       options:
-        - "Yes"
         - "No"
+        - "Yes"
     validations:
       required: true
   - type: input
@@ -58,7 +58,7 @@ body:
       description: >-
         If a role is open, its title, optionally with where it is posted.
         Otherwise, where the firm lists jobs or a public contact.
-      placeholder: "Credit Analyst (Lever)  /  Greenhouse job board  /  Tel 212-555-0100"
+      placeholder: "e.g. Credit Analyst (Lever)  /  Greenhouse job board  /  Tel 212-555-0100"
     validations:
       required: true
   - type: input
@@ -66,5 +66,5 @@ body:
     attributes:
       label: Link
       description: The posting, careers page or firm website, or a public email address.
-      placeholder: https://jobs.lever.co/example/1234
+      placeholder: "e.g. https://jobs.lever.co/example/1234"
 

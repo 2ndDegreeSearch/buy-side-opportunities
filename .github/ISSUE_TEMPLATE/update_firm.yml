@@ -31,8 +31,8 @@ body:
     attributes:
       label: Is a specific role open now?
       options:
-        - "Yes"
         - "No"
+        - "Yes"
   - type: input
     id: careers
     attributes:
@@ -40,13 +40,13 @@ body:
       description: >-
         If a role is open, its title, optionally with where it is posted.
         Otherwise, where the firm lists jobs or a public contact.
-      placeholder: "Credit Analyst (Lever)  /  Greenhouse job board  /  Tel 212-555-0100"
+      placeholder: "e.g. Credit Analyst (Lever)  /  Greenhouse job board  /  Tel 212-555-0100"
   - type: input
     id: link
     attributes:
       label: Link
       description: The posting, careers page or firm website, or a public email address.
-      placeholder: https://jobs.lever.co/example/1234
+      placeholder: "e.g. https://jobs.lever.co/example/1234"
   - type: textarea
     id: details
     attributes:
