@@ -30,7 +30,6 @@ CATEGORIES = {
     "Emerging Managers": "🌱",
 }
 
-POSTING = re.compile(r"\bposting\b|handshake", re.I)
 JOB_BOARD = re.compile(r"job board|\bjobs\b|careers (page|link|via)|job listings|built in|apply", re.I)
 NO_CAREERS = re.compile(r"no public careers page", re.I)
 # A bare website such as "engagedcapital.com" or "numer.ai".
@@ -47,13 +46,14 @@ class Firm:
     strategy: str
     hq: str
     aum: str
+    posting: bool
     careers: str
     link: str
 
     @property
     def status(self) -> str:
-        """posting: a specific role was seen; board: a jobs page exists; contact: neither."""
-        if POSTING.search(self.careers):
+        """posting: a specific role is open; board: a jobs page exists; contact: neither."""
+        if self.posting:
             return "posting"
         if NO_CAREERS.search(self.careers):
             return "contact"
@@ -64,12 +64,6 @@ class Firm:
     @property
     def opportunity(self) -> str:
         """The posted role, the jobs page, or the public contact, as shown on the board."""
-        if self.status == "posting":
-            # "Credit Analyst posting" -> "Credit Analyst"; "Job posting (Paylocity)" -> "Open role (Paylocity)"
-            role = " ".join(re.sub(r"\b(job\s+)?posting\b", "", self.careers, flags=re.I).split())
-            if not role or role.startswith("(") or role.lower().startswith("on "):
-                role = f"Open role {role}".strip()
-            return role
         if NO_CAREERS.search(self.careers):
             return ""
         if self.link and BARE_DOMAIN.fullmatch(self.careers):
@@ -95,13 +89,17 @@ def read_firms(path: Path) -> list[Firm]:
             raise SystemExit(
                 f"Unknown section {section!r} for {row['Firm']!r}. Use one of: {', '.join(CATEGORIES)}"
             )
+        posting = row["Posting"].strip().upper()
+        if posting not in ("Y", "N"):
+            raise SystemExit(f"Posting must be Y or N for {row['Firm']!r}, got {row['Posting']!r}")
         firms.append(
             Firm(
                 name=row["Firm"].strip(),
                 section=section,
                 strategy=row["Strategy"].strip(),
                 hq=row["HQ"].strip(),
-                aum=row["AUM"].strip().strip('"'),
+                aum=row["AUM"].strip(),
+                posting=posting == "Y",
                 careers=row["Careers / contact"].strip(),
                 link=row["Careers / contact link"].strip(),
             )
