@@ -172,4 +172,4 @@ Most of these firms are too small for campus recruiting, so a direct note to the
 
 This README is generated from [`firms.csv`](./firms.csv) by [`.github/scripts/build_board.py`](./.github/scripts/build_board.py). Do not edit it by hand: change `firms.csv` and a GitHub Action regenerates it.
 
-<sub>Last generated 2026-11-12. AUM figures come from Form ADV, 13F and press sources noted in `firms.csv`.</sub>
+<sub>Last generated 2026-11-12. AUM figures come from Form ADV, 13F filings and press reports.</sub>

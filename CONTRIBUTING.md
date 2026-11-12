@@ -27,8 +27,6 @@ Do not edit `README.md` by hand, because it is overwritten on every update.
 | `Strategy` | Short description of what the firm invests in. |
 | `HQ` | Headquarters city. |
 | `AUM` | Assets under management as reported. |
-| `AUM source` | Where the AUM figure comes from. |
-| `AUM source link` | URL of that source, if there is one. |
 | `Careers / contact` | A posted role (write "<Title> posting", e.g. "Credit Analyst posting"), a careers page or job board, a public contact, or "No public careers page found". |
 | `Careers / contact link` | URL of the posting, careers page or website, or a `mailto:` address. It becomes the Apply, Careers, Website or Email button. |
 
@@ -36,5 +34,5 @@ Do not edit `README.md` by hand, because it is overwritten on every update.
 
 - Only add public contact information that the firm publishes itself, such as general inboxes, recruiting addresses and main office numbers.
   Do not add personal emails or phone numbers of individual employees.
-- Cite a source for AUM figures.
+- Cite a source for AUM figures in your issue or pull request.
 - When a role closes, remove the word "posting" from `Careers / contact` so the firm drops the 🟢 marker.

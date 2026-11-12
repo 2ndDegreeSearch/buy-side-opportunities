@@ -201,7 +201,7 @@ def render(firms: list[Firm], today: date) -> str:
         "[`.github/scripts/build_board.py`](./.github/scripts/build_board.py). "
         "Do not edit it by hand: change `firms.csv` and a GitHub Action regenerates it.",
         "",
-        f"<sub>Last generated {today.isoformat()}. AUM figures come from Form ADV, 13F and press sources noted in `firms.csv`.</sub>",
+        f"<sub>Last generated {today.isoformat()}. AUM figures come from Form ADV, 13F filings and press reports.</sub>",
         "",
     ]
     return "\n".join(out)
