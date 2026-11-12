@@ -23,10 +23,32 @@ body:
         - Other
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: For a role or contact change, fill in the new values below. Leave them blank otherwise.
+  - type: dropdown
+    id: posting
+    attributes:
+      label: Is a specific role open now?
+      options:
+        - "Yes"
+        - "No"
+  - type: input
+    id: careers
+    attributes:
+      label: Role title, or careers / contact
+      description: >-
+        If a role is open, its title, optionally with where it is posted.
+        Otherwise, where the firm lists jobs or a public contact.
+      placeholder: "Credit Analyst (Lever)  /  Greenhouse job board  /  Tel 212-555-0100"
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: The posting, careers page or firm website, or a public email address.
+      placeholder: https://jobs.lever.co/example/1234
   - type: textarea
     id: details
     attributes:
       label: Details
-      description: The correct information, with a source link.
-    validations:
-      required: true
+      description: Anything else, such as the correct AUM with a source, or why the firm should be removed.
