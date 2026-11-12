@@ -1,0 +1,51 @@
+name: Add a firm
+description: Suggest a buy-side firm for the board
+title: "New firm: "
+labels: ["new firm"]
+body:
+  - type: input
+    id: firm
+    attributes:
+      label: Firm name
+      placeholder: Varadero Capital
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Private Credit & Asset-Based Finance
+        - BDCs & Venture Debt
+        - Hedge Funds
+        - Litigation Finance & Insurance-Linked Securities
+        - Emerging Managers
+    validations:
+      required: true
+  - type: input
+    id: strategy
+    attributes:
+      label: Strategy
+      placeholder: ABF / structured credit
+    validations:
+      required: true
+  - type: input
+    id: hq
+    attributes:
+      label: Headquarters
+      placeholder: New York
+    validations:
+      required: true
+  - type: input
+    id: aum
+    attributes:
+      label: AUM and source
+      description: Include where the figure comes from (Form ADV, 13F, press release, ...).
+      placeholder: $2.3B (Form ADV, 2026)
+  - type: textarea
+    id: opportunity
+    attributes:
+      label: Open role or how to apply
+      description: Link a specific posting if there is one, otherwise a careers page, website or public email.
+    validations:
+      required: true

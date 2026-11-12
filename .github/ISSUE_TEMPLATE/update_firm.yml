@@ -1,0 +1,32 @@
+name: Update or remove a firm
+description: Report a new or closed role, wrong AUM, a dead link or a firm that no longer fits
+title: "Update: "
+labels: ["update"]
+body:
+  - type: input
+    id: firm
+    attributes:
+      label: Firm name
+      description: As it appears on the board.
+    validations:
+      required: true
+  - type: dropdown
+    id: change
+    attributes:
+      label: What changed?
+      options:
+        - A role opened
+        - A role closed
+        - AUM or strategy is wrong
+        - Contact or link is wrong
+        - Remove this firm
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: The correct information, with a source link.
+    validations:
+      required: true
